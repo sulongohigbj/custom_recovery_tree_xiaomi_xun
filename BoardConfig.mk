@@ -85,7 +85,6 @@ BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor odm vendor_dlkm
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
-BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Platform
 TARGET_BOARD_PLATFORM := bengal
@@ -131,7 +130,7 @@ TW_DEFAULT_BRIGHTNESS := 900
 TW_NO_SCREEN_BLANK := true
 TW_INCLUDE_FUSE_EXFAT := true
 TW_SKIP_ADDITIONAL_FSTAB := true
-TW_LOAD_VENDOR_MODULES  += "focaltech_ts_spi.ko nt36532_spi.ko qti_battery_charger.ko"
+#TW_LOAD_VENDOR_MODULES  += "focaltech_ts_spi.ko nt36532_spi.ko qti_battery_charger.ko"
 TW_INCLUDE_ADBD := true
 
 # Version
