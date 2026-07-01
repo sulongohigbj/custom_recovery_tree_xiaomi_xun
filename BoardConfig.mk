@@ -87,7 +87,7 @@ BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor odm p
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 # Platform
-TARGET_BOARD_PLATFORM := xun
+TARGET_BOARD_PLATFORM := bengal
 
 # Props
 TARGET_VENDOR_PROP := $(DEVICE_PATH)/vendor.prop
@@ -118,7 +118,7 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # TWRP Configuration
-TW_THEME := landscape_hdpi
+TW_THEME := portrait_hdpi
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
@@ -131,7 +131,6 @@ TW_NO_SCREEN_BLANK := true
 TW_INCLUDE_FUSE_EXFAT := true
 TW_SKIP_ADDITIONAL_FSTAB := true
 TW_LOAD_VENDOR_MODULES  += "focaltech_ts_spi.ko nt36532_spi.ko qti_battery_charger.ko"
-TW_ROTATION := 180
 
 # Version
 TW_DEVICE_VERSION := Gowther
