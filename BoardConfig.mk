@@ -59,12 +59,14 @@ TARGET_USES_LOGD := false
 
 # Display
 TARGET_SCREEN_HEIGHT  := 1920
-TARGET_SCREEN_DENSITY := 390
+TARGET_SCREEN_DENSITY := 320
 TARGET_SCREEN_WIDTH   := 1200
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+
+BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel # Dummy prebuilt kernel
@@ -83,8 +85,9 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
-BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor odm product
+BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor odm product vendor_dlkm system_dlkm
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
+BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Platform
 TARGET_BOARD_PLATFORM := bengal
@@ -130,7 +133,8 @@ TW_DEFAULT_BRIGHTNESS := 900
 TW_NO_SCREEN_BLANK := true
 TW_INCLUDE_FUSE_EXFAT := true
 TW_SKIP_ADDITIONAL_FSTAB := true
-TW_LOAD_VENDOR_MODULES  += "focaltech_ts_spi.ko nt36532_spi.ko qti_battery_charger.ko"
+#TW_LOAD_VENDOR_MODULES  += "focaltech_ts_spi.ko nt36532_spi.ko qti_battery_charger.ko"
+TW_INCLUDE_ADBD := true
 
 # Version
 TW_DEVICE_VERSION := Gowther
