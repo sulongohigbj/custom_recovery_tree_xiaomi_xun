@@ -131,7 +131,7 @@ TW_DEFAULT_BRIGHTNESS := 900
 TW_NO_SCREEN_BLANK := true
 TW_INCLUDE_FUSE_EXFAT := true
 TW_SKIP_ADDITIONAL_FSTAB := true
-#TW_LOAD_VENDOR_MODULES  += "focaltech_ts_spi.ko nt36532_spi.ko qti_battery_charger.ko"
+TW_LOAD_VENDOR_MODULES  += "focaltech_ts_spi.ko nt36532_spi.ko qti_battery_charger.ko"
 TW_INCLUDE_ADBD := true
 
 # Version
