@@ -13,5 +13,7 @@ PRODUCT_MAKEFILES := \
 COMMON_LUNCH_CHOICES := \
     twrp_xun-userdebug \
     twrp_xun-eng \
+    twrp_xun-ap3a-userdebug \
+    twrp_xun-ap3a-eng \
     orangefox_xun-userdebug \
     orangefox_xun-eng
