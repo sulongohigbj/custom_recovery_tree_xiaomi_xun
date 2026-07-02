@@ -52,3 +52,6 @@ on property:twrp.modules.loaded=true
     wait /sys/class/power_supply/battery
     start health-hal-2-1
  # umount /firmware
+
+on property:sys.usb.config=adb
+    start adbd
